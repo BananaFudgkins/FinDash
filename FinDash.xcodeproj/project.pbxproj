@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00951C272B9A2CF1008A1F3C /* FinDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C262B9A2CF1008A1F3C /* FinDashApp.swift */; };
+		00951C292B9A2CF1008A1F3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C282B9A2CF1008A1F3C /* ContentView.swift */; };
+		00951C2B2B9A2CFC008A1F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */; };
+		00951C2F2B9A2CFC008A1F3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00951C2E2B9A2CFC008A1F3C /* Preview Assets.xcassets */; };
+		00951C392B9A2CFC008A1F3C /* FinDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C382B9A2CFC008A1F3C /* FinDashTests.swift */; };
+		00951C432B9A2CFC008A1F3C /* FinDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C422B9A2CFC008A1F3C /* FinDashUITests.swift */; };
+		00951C452B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C442B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00951C352B9A2CFC008A1F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00951C1B2B9A2CF1008A1F3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00951C222B9A2CF1008A1F3C;
+			remoteInfo = FinDash;
+		};
+		00951C3F2B9A2CFC008A1F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00951C1B2B9A2CF1008A1F3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00951C222B9A2CF1008A1F3C;
+			remoteInfo = FinDash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00951C232B9A2CF1008A1F3C /* FinDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00951C262B9A2CF1008A1F3C /* FinDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashApp.swift; sourceTree = "<group>"; };
+		00951C282B9A2CF1008A1F3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00951C2C2B9A2CFC008A1F3C /* FinDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinDash.entitlements; sourceTree = "<group>"; };
+		00951C2E2B9A2CFC008A1F3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00951C342B9A2CFC008A1F3C /* FinDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00951C382B9A2CFC008A1F3C /* FinDashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashTests.swift; sourceTree = "<group>"; };
+		00951C3E2B9A2CFC008A1F3C /* FinDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00951C422B9A2CFC008A1F3C /* FinDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashUITests.swift; sourceTree = "<group>"; };
+		00951C442B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00951C202B9A2CF1008A1F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C312B9A2CFC008A1F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C3B2B9A2CFC008A1F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00951C1A2B9A2CF1008A1F3C = {
+			isa = PBXGroup;
+			children = (
+				00951C252B9A2CF1008A1F3C /* FinDash */,
+				00951C372B9A2CFC008A1F3C /* FinDashTests */,
+				00951C412B9A2CFC008A1F3C /* FinDashUITests */,
+				00951C242B9A2CF1008A1F3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00951C242B9A2CF1008A1F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00951C232B9A2CF1008A1F3C /* FinDash.app */,
+				00951C342B9A2CFC008A1F3C /* FinDashTests.xctest */,
+				00951C3E2B9A2CFC008A1F3C /* FinDashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00951C252B9A2CF1008A1F3C /* FinDash */ = {
+			isa = PBXGroup;
+			children = (
+				00951C262B9A2CF1008A1F3C /* FinDashApp.swift */,
+				00951C282B9A2CF1008A1F3C /* ContentView.swift */,
+				00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */,
+				00951C2C2B9A2CFC008A1F3C /* FinDash.entitlements */,
+				00951C2D2B9A2CFC008A1F3C /* Preview Content */,
+			);
+			path = FinDash;
+			sourceTree = "<group>";
+		};
+		00951C2D2B9A2CFC008A1F3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00951C2E2B9A2CFC008A1F3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00951C372B9A2CFC008A1F3C /* FinDashTests */ = {
+			isa = PBXGroup;
+			children = (
+				00951C382B9A2CFC008A1F3C /* FinDashTests.swift */,
+			);
+			path = FinDashTests;
+			sourceTree = "<group>";
+		};
+		00951C412B9A2CFC008A1F3C /* FinDashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00951C422B9A2CFC008A1F3C /* FinDashUITests.swift */,
+				00951C442B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift */,
+			);
+			path = FinDashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00951C222B9A2CF1008A1F3C /* FinDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00951C482B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDash" */;
+			buildPhases = (
+				00951C1F2B9A2CF1008A1F3C /* Sources */,
+				00951C202B9A2CF1008A1F3C /* Frameworks */,
+				00951C212B9A2CF1008A1F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinDash;
+			productName = FinDash;
+			productReference = 00951C232B9A2CF1008A1F3C /* FinDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00951C332B9A2CFC008A1F3C /* FinDashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00951C4B2B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDashTests" */;
+			buildPhases = (
+				00951C302B9A2CFC008A1F3C /* Sources */,
+				00951C312B9A2CFC008A1F3C /* Frameworks */,
+				00951C322B9A2CFC008A1F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00951C362B9A2CFC008A1F3C /* PBXTargetDependency */,
+			);
+			name = FinDashTests;
+			productName = FinDashTests;
+			productReference = 00951C342B9A2CFC008A1F3C /* FinDashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00951C3D2B9A2CFC008A1F3C /* FinDashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00951C4E2B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDashUITests" */;
+			buildPhases = (
+				00951C3A2B9A2CFC008A1F3C /* Sources */,
+				00951C3B2B9A2CFC008A1F3C /* Frameworks */,
+				00951C3C2B9A2CFC008A1F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00951C402B9A2CFC008A1F3C /* PBXTargetDependency */,
+			);
+			name = FinDashUITests;
+			productName = FinDashUITests;
+			productReference = 00951C3E2B9A2CFC008A1F3C /* FinDashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00951C1B2B9A2CF1008A1F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					00951C222B9A2CF1008A1F3C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					00951C332B9A2CFC008A1F3C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 00951C222B9A2CF1008A1F3C;
+					};
+					00951C3D2B9A2CFC008A1F3C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 00951C222B9A2CF1008A1F3C;
+					};
+				};
+			};
+			buildConfigurationList = 00951C1E2B9A2CF1008A1F3C /* Build configuration list for PBXProject "FinDash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00951C1A2B9A2CF1008A1F3C;
+			productRefGroup = 00951C242B9A2CF1008A1F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00951C222B9A2CF1008A1F3C /* FinDash */,
+				00951C332B9A2CFC008A1F3C /* FinDashTests */,
+				00951C3D2B9A2CFC008A1F3C /* FinDashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00951C212B9A2CF1008A1F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00951C2F2B9A2CFC008A1F3C /* Preview Assets.xcassets in Resources */,
+				00951C2B2B9A2CFC008A1F3C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C322B9A2CFC008A1F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C3C2B9A2CFC008A1F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00951C1F2B9A2CF1008A1F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00951C292B9A2CF1008A1F3C /* ContentView.swift in Sources */,
+				00951C272B9A2CF1008A1F3C /* FinDashApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C302B9A2CFC008A1F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00951C392B9A2CFC008A1F3C /* FinDashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00951C3A2B9A2CFC008A1F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00951C452B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift in Sources */,
+				00951C432B9A2CFC008A1F3C /* FinDashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00951C362B9A2CFC008A1F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00951C222B9A2CF1008A1F3C /* FinDash */;
+			targetProxy = 00951C352B9A2CFC008A1F3C /* PBXContainerItemProxy */;
+		};
+		00951C402B9A2CFC008A1F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00951C222B9A2CF1008A1F3C /* FinDash */;
+			targetProxy = 00951C3F2B9A2CFC008A1F3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00951C462B9A2CFC008A1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00951C472B9A2CFC008A1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		00951C492B9A2CFC008A1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinDash/FinDash.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinDash/Preview Content\"";
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00951C4A2B9A2CFC008A1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinDash/FinDash.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinDash/Preview Content\"";
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00951C4C2B9A2CFC008A1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinDash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinDash";
+			};
+			name = Debug;
+		};
+		00951C4D2B9A2CFC008A1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinDash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinDash";
+			};
+			name = Release;
+		};
+		00951C4F2B9A2CFC008A1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinDash;
+			};
+			name = Debug;
+		};
+		00951C502B9A2CFC008A1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85Q84CPFAN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dejajackson.FinDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinDash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00951C1E2B9A2CF1008A1F3C /* Build configuration list for PBXProject "FinDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00951C462B9A2CFC008A1F3C /* Debug */,
+				00951C472B9A2CFC008A1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00951C482B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00951C492B9A2CFC008A1F3C /* Debug */,
+				00951C4A2B9A2CFC008A1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00951C4B2B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00951C4C2B9A2CFC008A1F3C /* Debug */,
+				00951C4D2B9A2CFC008A1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00951C4E2B9A2CFC008A1F3C /* Build configuration list for PBXNativeTarget "FinDashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00951C4F2B9A2CFC008A1F3C /* Debug */,
+				00951C502B9A2CFC008A1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00951C1B2B9A2CF1008A1F3C /* Project object */;
+}
