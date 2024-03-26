@@ -14,6 +14,9 @@
 		00951C392B9A2CFC008A1F3C /* FinDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C382B9A2CFC008A1F3C /* FinDashTests.swift */; };
 		00951C432B9A2CFC008A1F3C /* FinDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C422B9A2CFC008A1F3C /* FinDashUITests.swift */; };
 		00951C452B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C442B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift */; };
+		00951C532BAD051D008A1F3C /* LinkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00951C522BAD051D008A1F3C /* LinkKit */; };
+		00951C552BAD0615008A1F3C /* NetWorthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C542BAD0615008A1F3C /* NetWorthView.swift */; };
+		00951C572BAD061E008A1F3C /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C562BAD061E008A1F3C /* AccountsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 		00951C3E2B9A2CFC008A1F3C /* FinDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951C422B9A2CFC008A1F3C /* FinDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashUITests.swift; sourceTree = "<group>"; };
 		00951C442B9A2CFC008A1F3C /* FinDashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00951C542BAD0615008A1F3C /* NetWorthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthView.swift; sourceTree = "<group>"; };
+		00951C562BAD061E008A1F3C /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00951C532BAD051D008A1F3C /* LinkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,8 @@
 				00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */,
 				00951C2C2B9A2CFC008A1F3C /* FinDash.entitlements */,
 				00951C2D2B9A2CFC008A1F3C /* Preview Content */,
+				00951C542BAD0615008A1F3C /* NetWorthView.swift */,
+				00951C562BAD061E008A1F3C /* AccountsView.swift */,
 			);
 			path = FinDash;
 			sourceTree = "<group>";
@@ -145,6 +153,9 @@
 			dependencies = (
 			);
 			name = FinDash;
+			packageProductDependencies = (
+				00951C522BAD051D008A1F3C /* LinkKit */,
+			);
 			productName = FinDash;
 			productReference = 00951C232B9A2CF1008A1F3C /* FinDash.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 00951C1A2B9A2CF1008A1F3C;
+			packageReferences = (
+				00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */,
+			);
 			productRefGroup = 00951C242B9A2CF1008A1F3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00951C572BAD061E008A1F3C /* AccountsView.swift in Sources */,
+				00951C552BAD0615008A1F3C /* NetWorthView.swift in Sources */,
 				00951C292B9A2CF1008A1F3C /* ContentView.swift in Sources */,
 				00951C272B9A2CF1008A1F3C /* FinDashApp.swift in Sources */,
 			);
@@ -617,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/plaid/plaid-link-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00951C522BAD051D008A1F3C /* LinkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */;
+			productName = LinkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00951C1B2B9A2CF1008A1F3C /* Project object */;
 }
