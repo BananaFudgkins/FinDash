@@ -1,5 +1,5 @@
 {
-  "originHash" : "504a68837e5809de78d40418c5bd097114a0ae5cb53b5a40cc3d33ff07b0da6d",
+  "originHash" : "18fc61f2f789c3d004e7a964989ab9a4f1aca9e2680a13239971a898779e6b36",
   "pins" : [
     {
       "identity" : "plaid-link-ios",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "a9ae84b388c45bfb8fbe7549cb00e8384e6b82c0",
         "version" : "5.3.1"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
+        "version" : "5.19.1"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "22423b017b99ab8ac44e29e6372f571f782af6e4",
+        "version" : "3.0.2"
       }
     }
   ],

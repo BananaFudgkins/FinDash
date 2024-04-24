@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003797D42BD5FB1700722E91 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003797D32BD5FB1700722E91 /* Account.swift */; };
+		003797D62BD604D300722E91 /* InstitutionGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003797D52BD604D300722E91 /* InstitutionGridView.swift */; };
+		003797D82BD604E300722E91 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003797D72BD604E300722E91 /* Institution.swift */; };
+		003797DA2BD60A2100722E91 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003797D92BD60A2100722E91 /* Secrets.swift */; };
+		003797DC2BD997F400722E91 /* InstitutionGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003797DB2BD997F400722E91 /* InstitutionGridCell.swift */; };
+		003797DF2BD998C500722E91 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 003797DE2BD998C500722E91 /* SDWebImageSwiftUI */; };
 		00951C272B9A2CF1008A1F3C /* FinDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C262B9A2CF1008A1F3C /* FinDashApp.swift */; };
 		00951C292B9A2CF1008A1F3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951C282B9A2CF1008A1F3C /* ContentView.swift */; };
 		00951C2B2B9A2CFC008A1F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */; };
@@ -37,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003797D32BD5FB1700722E91 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		003797D52BD604D300722E91 /* InstitutionGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionGridView.swift; sourceTree = "<group>"; };
+		003797D72BD604E300722E91 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
+		003797D92BD60A2100722E91 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		003797DB2BD997F400722E91 /* InstitutionGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionGridCell.swift; sourceTree = "<group>"; };
 		00951C232B9A2CF1008A1F3C /* FinDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951C262B9A2CF1008A1F3C /* FinDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinDashApp.swift; sourceTree = "<group>"; };
 		00951C282B9A2CF1008A1F3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003797DF2BD998C500722E91 /* SDWebImageSwiftUI in Frameworks */,
 				00951C532BAD051D008A1F3C /* LinkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003797D22BD5FB0200722E91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				003797D32BD5FB1700722E91 /* Account.swift */,
+				003797D72BD604E300722E91 /* Institution.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		00951C1A2B9A2CF1008A1F3C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +122,7 @@
 		00951C252B9A2CF1008A1F3C /* FinDash */ = {
 			isa = PBXGroup;
 			children = (
+				003797D22BD5FB0200722E91 /* Model */,
 				00951C262B9A2CF1008A1F3C /* FinDashApp.swift */,
 				00951C282B9A2CF1008A1F3C /* ContentView.swift */,
 				00951C2A2B9A2CFC008A1F3C /* Assets.xcassets */,
@@ -108,6 +130,9 @@
 				00951C2D2B9A2CFC008A1F3C /* Preview Content */,
 				00951C542BAD0615008A1F3C /* NetWorthView.swift */,
 				00951C562BAD061E008A1F3C /* AccountsView.swift */,
+				003797D52BD604D300722E91 /* InstitutionGridView.swift */,
+				003797DB2BD997F400722E91 /* InstitutionGridCell.swift */,
+				003797D92BD60A2100722E91 /* Secrets.swift */,
 			);
 			path = FinDash;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 			name = FinDash;
 			packageProductDependencies = (
 				00951C522BAD051D008A1F3C /* LinkKit */,
+				003797DE2BD998C500722E91 /* SDWebImageSwiftUI */,
 			);
 			productName = FinDash;
 			productReference = 00951C232B9A2CF1008A1F3C /* FinDash.app */;
@@ -230,6 +256,7 @@
 			mainGroup = 00951C1A2B9A2CF1008A1F3C;
 			packageReferences = (
 				00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */,
+				003797DD2BD998C500722E91 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 00951C242B9A2CF1008A1F3C /* Products */;
 			projectDirPath = "";
@@ -273,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003797D42BD5FB1700722E91 /* Account.swift in Sources */,
+				003797DA2BD60A2100722E91 /* Secrets.swift in Sources */,
 				00951C572BAD061E008A1F3C /* AccountsView.swift in Sources */,
+				003797DC2BD997F400722E91 /* InstitutionGridCell.swift in Sources */,
 				00951C552BAD0615008A1F3C /* NetWorthView.swift in Sources */,
 				00951C292B9A2CF1008A1F3C /* ContentView.swift in Sources */,
 				00951C272B9A2CF1008A1F3C /* FinDashApp.swift in Sources */,
+				003797D62BD604D300722E91 /* InstitutionGridView.swift in Sources */,
+				003797D82BD604E300722E91 /* Institution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +667,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		003797DD2BD998C500722E91 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 		00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/plaid/plaid-link-ios";
@@ -646,6 +686,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		003797DE2BD998C500722E91 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 003797DD2BD998C500722E91 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		00951C522BAD051D008A1F3C /* LinkKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 00951C512BAD051D008A1F3C /* XCRemoteSwiftPackageReference "plaid-link-ios" */;

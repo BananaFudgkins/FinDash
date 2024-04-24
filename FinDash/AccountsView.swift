@@ -6,10 +6,31 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AccountsView: View {
+    @Query var accounts: [Account]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 10) {
+            if accounts.isEmpty {
+                Text("No Accounts!")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                Text("No accounts have been added yet! Add some now by pressing the button below.")
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+            }
+            
+            Button("Add Account") {
+                print("DO SOMETHING TWITTER BE LIKE")
+            }
+            .padding()
+            .foregroundStyle(.white)
+            .background(.tint)
+            .clipShape(Capsule())
+        }
+        .padding()
     }
 }
 
