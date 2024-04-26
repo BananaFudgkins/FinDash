@@ -10,6 +10,9 @@ import SwiftData
 
 struct AccountsView: View {
     @Query var accounts: [Account]
+    @State private var showingInstitutionsGrid = false
+    
+    @Environment (\.dismiss) private var dismiss
     
     var body: some View {
         VStack(spacing: 10) {
@@ -23,7 +26,18 @@ struct AccountsView: View {
             }
             
             Button("Add Account") {
-                print("DO SOMETHING TWITTER BE LIKE")
+                showingInstitutionsGrid.toggle()
+            }
+            .sheet(isPresented: $showingInstitutionsGrid) {
+                InstitutionGridView()
+                    .toolbar {
+                        Button(role: .cancel) {
+                            dismiss()
+                        } label: {
+                            Text("Cancel")
+                        }
+                        
+                    }
             }
             .padding()
             .foregroundStyle(.white)

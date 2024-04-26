@@ -10,14 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            NetWorthView()
-                .tabItem {
-                    Label("Net Worth", systemImage: "dollarsign")
-                }
-            AccountsView()
-                .tabItem {
-                    Label("Accounts", systemImage: "list.dash.header.rectangle")
-                }
+            NavigationStack {
+                NetWorthView()
+                    
+            }
+            .tabItem {
+                Label("Net Worth", systemImage: "dollarsign")
+            }
+            NavigationStack {
+                AccountsView()
+                    
+            }
+            .tabItem {
+                Label("Accounts", systemImage: "list.dash.header.rectangle")
+            }
         }
     }
 }

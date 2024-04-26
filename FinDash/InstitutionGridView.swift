@@ -8,24 +8,45 @@
 import SwiftUI
 
 struct InstitutionGridView: View {
+    @State private var institutions: [Institution] = [Institution]()
+    @State private var fetchingInstitutions = false
+    
     private let adaptiveColumn = [
         GridItem(.adaptive(minimum: 150))
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: adaptiveColumn, spacing: 20) {
-                
+        GeometryReader { geometry in
+            ScrollView(.vertical) {
+                if fetchingInstitutions {
+                    VStack(alignment: .center) {
+                        ProgressView()
+                        Text("Fetching Institutions...")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                    }
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                } else {
+                    LazyVGrid(columns: adaptiveColumn, spacing: 20) {
+                        ForEach(institutions) { instituion in
+                            InstitutionGridCell(institution: instituion)
+                        }
+                    }
+                }
             }
-        }
-        .onAppear {
-            prepareFetchRequest()
+            .onAppear {
+                if institutions.isEmpty {
+                    prepareFetchRequest()
+                }
+            }
         }
     }
 }
 
 extension InstitutionGridView {
     private func prepareFetchRequest() {
+        fetchingInstitutions.toggle()
+        
         guard let url = URL(string: "https://sandbox.plaid.com/institutions/get") else {
             print("Unable to create URL")
             return
@@ -61,13 +82,23 @@ extension InstitutionGridView {
             do {
                 let responseJSON = try JSONSerialization.jsonObject(with: data, options: [])
                 
-                if let responseJSON = responseJSON as? [String: Any] {
-                    print(responseJSON)
+                guard let resp = responseJSON as? [String: Any] else { return }
+                
+                guard let fetchedInstitutions = resp["institutions"] as? [[String: Any]] else { return }
+                
+                for institution in fetchedInstitutions {
+                    guard let id = institution["instituion_id"] as? String, let name = institution["name"] as? String else { return }
+                    
+                    institutions.append(Institution(id: id, name: name))
                 }
+                
+                fetchingInstitutions.toggle()
             } catch {
                 print("Error getting response JSON: \(error.localizedDescription)")
             }
         }
+        
+        task.resume()
     }
 }
 

@@ -7,11 +7,15 @@
 
 import Foundation
 
-class Institution {
+class Institution: Identifiable {
     var id: String
     var name: String
     var logo: Data?
     var primary_color: String?
+    
+    var identifer: String {
+        return UUID().uuidString
+    }
     
     init(id: String, name: String, logo: Data? = nil, primary_color: String? = nil) {
         self.id = id
