@@ -30,14 +30,6 @@ struct AccountsView: View {
             }
             .sheet(isPresented: $showingInstitutionsGrid) {
                 InstitutionGridView()
-                    .toolbar {
-                        Button(role: .cancel) {
-                            dismiss()
-                        } label: {
-                            Text("Cancel")
-                        }
-                        
-                    }
             }
             .padding()
             .foregroundStyle(.white)

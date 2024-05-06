@@ -17,16 +17,16 @@ struct InstitutionGridView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ScrollView(.vertical) {
-                if fetchingInstitutions {
-                    VStack(alignment: .center) {
-                        ProgressView()
-                        Text("Fetching Institutions...")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                    }
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                } else {
+            if fetchingInstitutions {
+                VStack(alignment: .center) {
+                    ProgressView()
+                    Text("Fetching Institutions...")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                }
+                .frame(width: geometry.size.width, height: geometry.size.height)
+            } else {
+                ScrollView(.vertical) {
                     LazyVGrid(columns: adaptiveColumn, spacing: 20) {
                         ForEach(institutions) { instituion in
                             InstitutionGridCell(institution: instituion)
@@ -34,10 +34,11 @@ struct InstitutionGridView: View {
                     }
                 }
             }
-            .onAppear {
-                if institutions.isEmpty {
-                    prepareFetchRequest()
-                }
+            
+        }
+        .onAppear {
+            if institutions.isEmpty {
+                prepareFetchRequest()
             }
         }
     }
@@ -90,6 +91,7 @@ extension InstitutionGridView {
                     guard let id = institution["instituion_id"] as? String, let name = institution["name"] as? String else { return }
                     
                     institutions.append(Institution(id: id, name: name))
+                    print("Added institution to array")
                 }
                 
                 fetchingInstitutions.toggle()
