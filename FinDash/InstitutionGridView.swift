@@ -22,6 +22,7 @@ struct InstitutionGridView: View {
                 Text("Fetching Institutions...")
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .colorInvert()
             } else {
                 ScrollView(.vertical) {
                     LazyVGrid(columns: adaptiveColumn, spacing: 20) {
@@ -87,7 +88,6 @@ extension InstitutionGridView {
                     guard let id = institution["institution_id"] as? String, let name = institution["name"] as? String else { return }
                     
                     institutions.append(Institution(id: id, name: name))
-                    print("Added institution to array")
                 }
                 
                 fetchingInstitutions.toggle()

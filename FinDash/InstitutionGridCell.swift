@@ -16,6 +16,8 @@ struct InstitutionGridCell: View {
             Text(institution.name)
                 .font(.title3)
                 .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
+                .colorInvert()
         }
         .padding()
     }
