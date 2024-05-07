@@ -56,7 +56,7 @@ extension InstitutionGridView {
         
         let json: [String: Any] = ["client_id": client_id,
                                    "secret": secret,
-                                   "count": 200,
+                                   "count": 60,
                                    "offset": 0,
                                    "options": ["include_optional_metadata": true],
                                    "country_codes": ["US"]]
