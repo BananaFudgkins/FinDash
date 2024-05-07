@@ -58,6 +58,7 @@ extension InstitutionGridView {
                                    "secret": secret,
                                    "count": 200,
                                    "offset": 0,
+                                   "options": ["include_optional_metadata": true],
                                    "country_codes": ["US"]]
         
         do {
@@ -87,7 +88,13 @@ extension InstitutionGridView {
                 for institution in fetchedInstitutions {
                     guard let id = institution["institution_id"] as? String, let name = institution["name"] as? String else { return }
                     
-                    institutions.append(Institution(id: id, name: name))
+                    let newInstitution = Institution(id: id, name: name)
+                    
+                    if let logo = institution["logo"] as? String {
+                        newInstitution.logo = Data(base64Encoded: logo)
+                    }
+                    
+                    institutions.append(newInstitution)
                 }
                 
                 fetchingInstitutions.toggle()

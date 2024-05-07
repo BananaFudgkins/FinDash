@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
 
 struct InstitutionGridCell: View {
     let institution: Institution
     
     var body: some View {
         VStack {
+            if let logo = institution.logo {
+                Image(data: logo)!
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
             Text(institution.name)
                 .font(.title3)
                 .fontWeight(.semibold)
