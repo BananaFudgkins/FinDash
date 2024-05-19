@@ -29,7 +29,10 @@ struct AccountsView: View {
                 showingInstitutionsGrid.toggle()
             }
             .sheet(isPresented: $showingInstitutionsGrid) {
-                InstitutionGridView()
+                NavigationStack {
+                    InstitutionGridView()
+                        .navigationTitle("Select an Institution")
+                }
             }
             .padding()
             .foregroundStyle(.white)

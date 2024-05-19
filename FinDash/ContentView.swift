@@ -12,14 +12,14 @@ struct ContentView: View {
         TabView {
             NavigationStack {
                 NetWorthView()
-                    
+                    .navigationTitle("Net Worth")
             }
             .tabItem {
                 Label("Net Worth", systemImage: "dollarsign")
             }
             NavigationStack {
                 AccountsView()
-                    
+                    .navigationTitle("Accounts")
             }
             .tabItem {
                 Label("Accounts", systemImage: "list.dash.header.rectangle")

@@ -16,12 +16,17 @@ struct InstitutionGridCell: View {
                 Image(data: logo)!
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: 150)
+            } else {
+                Image(systemName: "photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: 150)
             }
             Text(institution.name)
                 .font(.title3)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
-                .colorInvert()
         }
         .padding()
     }
@@ -29,6 +34,6 @@ struct InstitutionGridCell: View {
 
 #Preview {
     InstitutionGridCell(
-        institution: Institution(id: "Yo Mama", name: "Yo Mama")
+        institution: Institution(id: "Yo Mama", name: "Your Mother")
     )
 }

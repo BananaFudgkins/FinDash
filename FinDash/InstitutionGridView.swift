@@ -22,7 +22,6 @@ struct InstitutionGridView: View {
                 Text("Fetching Institutions...")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .colorInvert()
             } else {
                 ScrollView(.vertical) {
                     LazyVGrid(columns: adaptiveColumn, spacing: 20) {
